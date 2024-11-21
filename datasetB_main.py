@@ -15,7 +15,7 @@ class MyDataset(tfds.core.GeneratorBasedBuilder):
             builder=self,
             description="Dataset B pour le pierre papier ciseaux",
             features=tfds.features.FeaturesDict({
-                "image": tfds.features.Image(shape=(640, 480, 3)),
+                "image": tfds.features.Image(shape=(300, 300, 3)),
                 "label": tfds.features.ClassLabel(names=["rock", "paper", "scissors"]),
             }),
             supervised_keys=("image", "label"),  # Clés pour le modèle supervisé
