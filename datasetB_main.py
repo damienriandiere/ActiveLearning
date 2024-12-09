@@ -27,6 +27,7 @@ class MyDataset(tfds.core.GeneratorBasedBuilder):
         return {
             "train": self._generate_examples(path=f"{data_path}/train"),
             "test": self._generate_examples(path=f"{data_path}/test"),
+            "val": self._generate_examples(path=f"{data_path}/val"),
         }
 
     def _generate_examples(self, path):
