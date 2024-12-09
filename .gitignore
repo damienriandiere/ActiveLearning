@@ -163,7 +163,7 @@ cython_debug/
 
 
 #Additional folders
-tmp/
+tmp*
 logs/
 
 *.png
